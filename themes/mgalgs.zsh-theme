@@ -1,5 +1,5 @@
-local host_color=${host_color:-magenta}
-local user='%{$fg[green]%}%n%{$fg[grey]%}@%{$fg[$host_color]%}%m%{$reset_color%}'
+local host_color=${host_color:-005}
+local user='%{$fg[green]%}%n%{$fg[grey]%}@%F{$host_color}%m%f%{$reset_color%}'
 local pwd='%{$fg[blue]%}%~%{$reset_color%}'
 local return_code='%(?..%{$fg[red]%}%? ↵%{$reset_color%})'
 local git_branch='$(git_prompt_status)%{$reset_color%}$(git_prompt_info)%{$reset_color%}'
